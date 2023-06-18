@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <bottom>
+      <BorderPane prefHeight="735.0" prefWidth="981.0" BorderPane.alignment="CENTER">
+         <left>
+            <TreeView id="treeview" fx:id="treeview" onMouseClicked="#selectItem" prefHeight="629.0" prefWidth="490.0" BorderPane.alignment="CENTER" />
+         </left>
+         <bottom>
+            <Button defaultButton="true" mnemonicParsing="false" onAction="#selectfold" text="selectFolder" textOverrun="LEADING_WORD_ELLIPSIS" BorderPane.alignment="CENTER" />
+         </bottom>
+         <right>
+            <TextArea id="overview" fx:id="overview" depthTest="ENABLE" editable="false" prefHeight="710.0" prefWidth="433.0" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+   </bottom>
+</BorderPane>
